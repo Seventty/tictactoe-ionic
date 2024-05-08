@@ -1,0 +1,7 @@
+{
+  "name": "tictactoe-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
