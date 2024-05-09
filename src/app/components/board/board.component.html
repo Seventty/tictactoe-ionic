@@ -1,6 +1,12 @@
 <main>
-  <div class="board">
-    <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
-    </app-square>
+  <div class="board-container">
+    <div class="board">
+      <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+      </app-square>
+    </div>
+    <ion-text *ngIf="winner" color="secondary">
+      <h2>Player {{winner}} Wins!</h2>
+    </ion-text>
+    <ion-button [disabled]="!winner" class="play-button" (click)="newGame()">Play again</ion-button>
   </div>
 </main>

@@ -5,6 +5,14 @@ main {
   align-items: center;
 }
 
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+}
+
 .board {
   display: grid;
   grid-template-columns: 100px 100px 100px;
@@ -13,5 +21,9 @@ main {
 }
 
 app-square {
-  border: 1px gray solid;
+  border: 1px rgb(211, 211, 211) solid;
+}
+
+.play-button {
+  margin-top: 1rem;
 }

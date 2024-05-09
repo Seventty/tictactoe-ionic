@@ -1,1 +1,1 @@
-<button class="square-button">{{value}}</button>
+<ion-button class="square-button" [ngClass]="value === 'O' ? 'background-o' : (value === 'X' ? 'background-x' : '')">{{value}}</ion-button>
