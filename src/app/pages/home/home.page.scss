@@ -1,0 +1,24 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container ion-button {
+  display: block;
+  margin-bottom: 10px;
+  width: 15rem;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+}

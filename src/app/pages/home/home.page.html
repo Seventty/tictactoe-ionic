@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Tic Tac Toe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-button size="large" class="menu-button" [routerLink]="['/local']">
+      Local
+      <ion-icon name="people-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button size="large" class="menu-button" [routerLink]="['/cpu']">
+      VS Cpu
+      <ion-icon name="hardware-chip-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button size="large" class="menu-button" [routerLink]="['/online']">
+      Play Online
+      <ion-icon name="wifi-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
